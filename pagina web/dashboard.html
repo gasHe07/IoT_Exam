@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="style2.css">
+        <script>
+            // Funzione per ottenere l'orario corrente
+            function getCurrentTime() {
+              var currentTime = new Date();
+              var hours = currentTime.getHours();
+              var minutes = currentTime.getMinutes();
+              var seconds = currentTime.getSeconds();
+        
+              // Formattazione dell'orario in hh:mm:ss
+              var formattedTime = hours + ":" + minutes + ":" + seconds;
+        
+              // Visualizzazione dell'orario nella pagina HTML
+              document.getElementById("current-time").textContent = formattedTime;
+
+              // Determinazione del saluto in base all'orario
+                var greeting;
+                if (hours >= 4 && hours < 14) {
+                    greeting = "Buongiorno";
+                } else if (hours >= 14 && hours < 18) {
+                    greeting = "Buon pomeriggio";
+                } else {
+                    greeting = "Buonasera";
+                }
+
+                // Visualizzazione del saluto nella pagina HTML
+                document.getElementById("greeting").textContent = greeting;
+            }
+
+            setInterval(getCurrentTime, 1000);
+          </script>
+    </head>
+    <body>
+        <form method="post" action="luci.html">
+            <h1>Accendi/Spegni Luci</h1>
+            <button type="submit" name="LUCI">Luci</button>
+        </form>
+        <form method="post" action="sveglia.html">
+            <h1>Attiva/Disattiva Sveglia</h1>
+            <button type="submit" name="sveglia">Sveglia</button>
+        </form>
+        <form method="post" action="codice.html">
+            <h1>Attiva/Disattiva Allarme</h1>
+            <button type="submit" name="Allarme">Allarme</button>
+        </form>
+        <form method="post" action="logout.php">
+            <h1>Logout</h1>
+            <button type="submit" name="logout">Logout</button>
+        </form>
+        <div id="current-time-container">
+            <span id="current-time"></span>
+         </div>
+         <div id="greeting"></div>
+    </body>
+</html>
