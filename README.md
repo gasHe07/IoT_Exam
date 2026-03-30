@@ -2,6 +2,7 @@
 
 ![IoT](https://img.shields.io/badge/Project-IoT-blue)
 ![Academic Year](https://img.shields.io/badge/A.A.-2022--2023-green)
+![ESP32](https://img.shields.io/badge/Hardware-ESP32--Wrover--module-red)
 ![University](https://img.shields.io/badge/University-Luigi%20Vanvitelli-orange)
 
 ## 👤 Autori
