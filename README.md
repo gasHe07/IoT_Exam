@@ -45,7 +45,6 @@ All'interno del repository sono presenti le seguenti cartelle:
 * **`pagina web/`**: Contiene lo sviluppo del **Front-end** (HTML) e del **Back-end** (PHP) per la gestione della dashboard e del server.
 * **`esameIoT/`**: Contiene il codice sorgente sviluppato in **C++** per la programmazione del modulo **ESP32 Wrover** e la gestione di sensori/attuatori.
 * **`UML/`**: Contiene i file dei diagrammi dei casi d'uso prodotti durante la fase di analisi.
-* **`Video/`**: Demo dimostrativa del funzionamento del progetto.
 
 ---
 
